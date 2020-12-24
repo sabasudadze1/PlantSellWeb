@@ -1,4 +1,4 @@
-# ReactJS_Homework3-4
+# ReactJS Plant Sales Web
 
 # რეგისტრაცია/ავტორიზაცია reqres-ით.
 
