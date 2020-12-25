@@ -1,8 +1,11 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
+
 
 const ProductItem = props => {
   const { product } = props;
   return (
+    <Fade bottom cascade>
     <div className=" column is-half">
       <div className="box">
         <div className="media">
@@ -44,6 +47,7 @@ const ProductItem = props => {
         </div>
       </div>
     </div>
+    </Fade>
   );
 };
 

@@ -25,7 +25,7 @@ export default {
     },
     {
       name: "Dahlia 'Creme de Cassis'",
-      stock: 11.99,
+      stock: 12,
       price: 6.99,
       shortDesc: "Fabulous for cut flower arrangements",
       imgUrl: "https://www.thompson-morgan.com/product_images/100/optimised/DAHL-TKA0119-A1.jpg",
@@ -33,7 +33,7 @@ export default {
     },
     {
       name: "Begonia",
-      stock: 13.99,
+      stock: 15,
       price: "7.99",
       shortDesc: "Keeps blooming - whatever the weather",
 

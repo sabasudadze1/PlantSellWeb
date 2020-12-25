@@ -6,6 +6,9 @@ import PublicHead from "../../components/publicHead";
 import DefaultLayout from "../../layouts";
 import {NavLink} from "react-router-dom";
 import PropTypes from "prop-types";
+import Fade from "react-reveal/Fade";
+
+
 
 export class Signup extends Component {
   constructor(props) {
@@ -44,6 +47,7 @@ export class Signup extends Component {
           <form name="form" onSubmit={this.handleSubmit}>
             <div className="form-group">
               <label htmlFor="email">Email</label>
+              <Fade left cascade>
               <input
                 type="email"
                 name="email"
@@ -51,12 +55,14 @@ export class Signup extends Component {
                 value={email}
                 onChange={this.handleChange}
               />
+              </Fade>
               {submitted && !email && (
                 <div className="error-block email">Please enter your email</div>
               )}
             </div>
             <div className="form-group">
               <label htmlFor="password">password</label>
+              <Fade left cascade>
               <input
                 type="password"
                 name="password"
@@ -64,12 +70,14 @@ export class Signup extends Component {
                 value={password}
                 onChange={this.handleChange}
               />
+              </Fade>
               {submitted && !password && (
                 <div className="error-block password">Please enter password</div>
               )}
             </div>
               <div className="form-group">
                   <label htmlFor="password">Repeat Password</label>
+                  <Fade left cascade>
                   <input
                       type="password"
                       name="repassword"
@@ -77,6 +85,7 @@ export class Signup extends Component {
                       value={repassword}
                       onChange={this.handleChange}
                   />
+                  </Fade>
                   {submitted && !repassword && (
                       <div className="error-block repassword">Repeating passwords is mandatory!</div>
                   )}

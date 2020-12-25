@@ -6,6 +6,8 @@ import PublicHead from "../../components/publicHead";
 import DefaultLayout from "../../layouts";
 import {NavLink} from "react-router-dom";
 import PropTypes from "prop-types";
+import Fade from "react-reveal/Fade";
+
 
 export class Login extends Component {
   constructor(props) {
@@ -43,6 +45,7 @@ export class Login extends Component {
           <form name="form" onSubmit={this.handleSubmit}>
             <div className="form-group">
               <label htmlFor="email">Email</label>
+              <Fade left cascade>
               <input
                 type="email"
                 name="email"
@@ -50,12 +53,14 @@ export class Login extends Component {
                 value={email}
                 onChange={this.handleChange}
               />
+              </Fade>
               {submitted && !email && (
                 <div className="error-block  email">Please enter your Email!</div>
               )}
             </div>
             <div className="form-group">
               <label htmlFor="password">Password</label>
+              <Fade left cascade>
               <input
                 type="password"
                 name="password"
@@ -63,6 +68,7 @@ export class Login extends Component {
                 value={password}
                 onChange={this.handleChange}
               />
+              </Fade>
               {submitted && !password && (
                 <div className="error-block password">Please enter your Password!</div>
               )}

@@ -1,9 +1,11 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 const CartItem = props => {
   const { cartItem, cartKey } = props;
   const { product, amount } = cartItem;
   return (
+    <Fade bottom cascade>
     <div className=" column is-half">
       <div className="box">
         <div className="media">
@@ -32,6 +34,7 @@ const CartItem = props => {
         </div>
       </div>
     </div>
+    </Fade>
   );
 };
 

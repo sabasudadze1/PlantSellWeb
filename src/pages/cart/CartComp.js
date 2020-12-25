@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import withContext from "../../withContext";
+import Fade from "react-reveal/Fade";
 
 import CartItem from "./CartItem";
 
@@ -8,11 +9,13 @@ const Cart = props => {
   const cartKeys = Object.keys(cart || {});
   return (
     <Fragment>
+      <Fade top cascade>
       <div className="hero is-primary">
         <div className="hero-body container">
           <h4 className="title">List of choosen products</h4>
         </div>
       </div>
+      </Fade>
       <br />
       <div className="container">
         {cartKeys.length ? (
@@ -27,6 +30,7 @@ const Cart = props => {
             ))}
             <div className="column is-12 is-clearfix">
               <br />
+              <Fade right cascade>
               <div className="is-pulled-right">
                 <button
                   onClick={props.context.clearCart}
@@ -34,13 +38,15 @@ const Cart = props => {
                 >
                   Delete all products
                 </button>{" "}
+                
                 <button
                   className="button is-success"
                   onClick={props.context.checkout}
                 >
                   Proceed
-                </button>
-              </div>
+                </button> 
+                
+              </div></Fade>
             </div>
           </div>
         ) : (
