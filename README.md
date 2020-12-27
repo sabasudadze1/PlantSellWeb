@@ -1,4 +1,4 @@
-# ReactJS Plant Sales Web https://plantshoptbilisi.netlify.app/
+# ReactJS/Redux Plant Sales Web https://plantshoptbilisi.netlify.app/
 
 # რეგისტრაცია/ავტორიზაცია reqres-ით.
 
